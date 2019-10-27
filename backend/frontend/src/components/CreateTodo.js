@@ -45,22 +45,23 @@ class CreateTodo extends Component {
                             <label htmlFor="discription">Discription</label>
                             <input type="text"
                                 name="discription"
-                                onChange={this.onChangeTodoHandler}
                                 className="form-control"
                                 id="exampleFormControlInput1"
                                 placeholder="discription"
-                                required />
+                                required
+                                onChange={this.onChangeTodoHandler}
+                                 />
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="responsible">Responsible</label>
                             <input type="text"
                                 name="responsible"
-                                onChange={this.onChangeTodoHandler}
                                 className="form-control"
                                 id="exampleFormControlInput1"
                                 placeholder="responsiblity"
                                 required
+                                onChange={this.onChangeTodoHandler}
                             />
                         </div>
 
