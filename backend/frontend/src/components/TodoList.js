@@ -41,6 +41,7 @@ class TodoList extends Component {
 
     render() {
         let { todos } = this.state
+       
         return (
             <div className="container">
                 <p>Welcome to Todo List Component</p>
@@ -50,10 +51,10 @@ class TodoList extends Component {
                             <div className="card-header">Todo</div>
                             <div className="card-body text-dark">
                                 {/* {todo.isCompleted ? 'completed' : '' + "card-title"} */}
-                                <h5 className="card-title"  >Title: {todo.discription}</h5>
-                                <p className="card-text">Info: {todo.responsible}</p>
-                                <p className="card-text">Priority: {todo.priority}</p>
-                                <p className="card-text">isCompleted: {todo.isCompleted}</p>
+                                <h5 className={todo.isCompleted ? 'completed' : ''}> Title: {todo.discription}</h5>
+                                <p className={todo.isCompleted ? 'completed' : ''}> Info: {todo.responsible}</p>
+                                <p className={todo.isCompleted ? 'completed' : ''}> Priority: {todo.priority}</p>
+                                {/* <p className="card-text">isCompleted: {todo.isCompleted}</p> */}
 
                             </div>
 
